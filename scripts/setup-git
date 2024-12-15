@@ -10,7 +10,7 @@ git config --global user.name "$1"
 git config --global user.email "$2"
 
 echo "Generate and use SSH key..."
-ssh-keygen -t ed25519 -C "$1" -f ~/.ssh/id_ed25519 -q -N ""
+ssh-keygen -t ed25519 -C "$2" -f ~/.ssh/id_ed25519 -q -N ""
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
