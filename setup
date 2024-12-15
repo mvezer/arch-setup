@@ -2,10 +2,12 @@
 
 source ./scripts/utils
 
-is_root
+pacman -Sy --noconfirm --quiet figlet
 
-pacman -Sy --noconfirm figlet
+headline "Settig up $(hostname)"
 
 ./scripts/install-packages
 ./scripts/bluetooth
+./scripts/setup-git "Matyas Vezer" "vezer.m@gmail.com"
+./scripts/setup-snapper
 

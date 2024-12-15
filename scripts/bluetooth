@@ -3,8 +3,10 @@
 source ./scripts/utils
 
 is_root
-headline "Setting up bluetooth"
+echo "Setting up bluetooth"
+draw_line
 
 systemctl start bluetooth
 systemctl enable bluetooth
 
+is_service_running bluetooth
