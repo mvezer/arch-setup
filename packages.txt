@@ -9,6 +9,7 @@ exa
 fd
 fzf
 git
+git-delta
 glow
 go
 grub-btrfs
@@ -32,6 +33,7 @@ ttf-jetbrains-mono-nerd
 unzip
 wezterm
 wget
+xautolock
 xclip
 yazi
 zsh

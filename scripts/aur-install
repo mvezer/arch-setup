@@ -4,4 +4,4 @@ source ./scripts/utils
 
 headline "Install AUR packages"
 
-yay -S floorp xkblayout-state-git bitwarden zapzap
+yay -S floorp-bin brave-bin xkblayout-state-git bitwarden zapzap
