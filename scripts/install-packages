@@ -1,0 +1,8 @@
+#!/bin/bash
+
+source ./scripts/utils
+
+is_root
+headline "Installing packages"
+
+pacman -Sy --noconfirm $(cat ./scripts/packages.txt | tr '\n' ' ')

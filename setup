@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source ./scripts/utils
+
+is_root
+
+pacman -Sy --noconfirm figlet
+
+./scripts/install-packages
+./scripts/bluetooth
+

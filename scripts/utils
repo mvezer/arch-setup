@@ -1,0 +1,18 @@
+#!/bin/bash
+
+function is_root() {
+  if [ "$EUID" -ne 0 ]; then
+    echo "Please run as root"
+    exit
+  fi
+}
+
+function headline() {
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' =
+  figlet $1
+  printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' =
+}
+
+function is_service_running() {
+  systemctl is-active --quiet $1 || echo "ERROR: $1 service is not running!" && systemctl status $1 && exit 1
+}

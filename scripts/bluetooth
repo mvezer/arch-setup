@@ -1,0 +1,10 @@
+#!/bin/bash
+
+source ./scripts/utils
+
+is_root
+headline "Setting up bluetooth"
+
+systemctl start bluetooth
+systemctl enable bluetooth
+
