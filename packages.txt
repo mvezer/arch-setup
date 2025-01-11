@@ -1,4 +1,6 @@
 alacritty
+arandr
+autorandr
 base-devel
 bat
 bitwarden
@@ -39,3 +41,4 @@ xautolock
 xclip
 yazi
 zsh
+zoxide
