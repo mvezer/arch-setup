@@ -25,6 +25,7 @@ luajit
 luarocks
 neovim
 nodejs
+npm
 ripgrep
 snap-pac
 snapper
@@ -40,5 +41,5 @@ wget
 xautolock
 xclip
 yazi
-zsh
 zoxide
+zsh
